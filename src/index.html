@@ -6,38 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tailwind Starter Template</title>
     <link rel="stylesheet" href="tailwind.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
   </head>
   <body>
     <main>
-      <section id="section1" class="grid-cols-2 bg-[#CFCFD0] md:grid">
+      <section id="section1" class="grid-cols-2 bg-[#CCCCCD] md:grid">
         <figure>
           <img src="img/kobenhavnerbilleder-sten-simons.jpg" alt="bog" />
         </figure>
-        <article>
-          <h1>Københavner billeder</h1>
-          <h2>En guide til hipster foto af Sten Simons</h2>
-          <button class="rounded bg-gray-200 px-5 py-2">Køb nu</button>
+        <article class="flex flex-col justify-center sm:items-center sm:pr-20">
+          <h1 class="bg-gray-900 p-6 rounded-xl sm:text-6xl text-gray-200 m-4 sm:-ml-32">Københavner billeder</h1>
+          <h2 class="mx-4 bg-gray-900 p-4 rounded-xl text-gray-300 sm:text-xl sm:-ml-96">En guide til hipster foto af Sten Simons</h2>
+          <button class="rounded-xl text-3xl  bg-[#FF66BA] px-8 py-4 m-10 mx-10 max-w-xs text-gray-100 hover:text-gray-100 hover:bg-gray-900 sm:-mr-80 sm:-mb-28 mt-20">Køb bogen</button>
         </article>
       </section>
-      <section id="section2">
-        <article>
-          <h2>Intro - kort om bogen</h2>
-          <div class="grid-cols-2 md:grid">
-            <p>
+      <section id="section2" >
+        <article class="m-5 px-10 ">
+          <h2 class="flex justify-end sm:pr-60 mx-10 mt-12  text-3xl">Intro - kort om bogen</h2>
+          <div class="grid-cols-2 gap-10 md:grid">
+            <ul class="bg-gray-900 text-gray-200 rounded-xl p-5 m-10 ml-20">
+              <li class="p-1">Titel: Københavnerbilleder - en guide til hipster foto</li>
+              <li class="p-1">Forfatter: Sten Simons Antal</li>
+              <li class="p-1">Sider: 344</li>
+              <li class="p-1">Forlag: Mellem Linjerne</li>
+              <li class="p-1">ISBN: 987-6-987654-32-1</li>
+              <li class="p-1">Pris: 399.-</li>
+            </ul>
+            <p class="m-10 sm:pr-48">
               Københavnerbilleder er de danske streetfotografers bibel: Det er
               en fusion mellem et kunstværk og en lærebog. Bogen gennemgår alle
               væsentlige aspekter af streetfotografering fra grundlæggende
               teknik til kreative eksperimenter. Alt sammen krydret med masser
               af inspirerende fotos. God læselyst!
             </p>
-            <ul>
-              <li>Titel: Københavnerbilleder - en guide til hipster foto</li>
-              <li>Forfatter: Sten Simons Antal</li>
-              <li>Sider: 344</li>
-              <li>Forlag: Mellem Linjerne</li>
-              <li>ISBN: 987-6-987654-32-1</li>
-              <li>Pris: 399.-</li>
-            </ul>
+           
           </div>
         </article>
         <figure class="grid-cols-3 md:grid">
@@ -46,12 +50,12 @@
           <img src="img/kobenhavnerbilleder_oppefra.jpg" alt="Bog" />
         </figure>
       </section>
-      <section id="section3">
-        <h2>Intro til kapitlerne</h2>
+      <section id="section3" class="sm:mx-10 px-5">
+        <h2 class="p-4 my-10 text-6xl"> Intro til kapitlerne</h2>
         <div class="grid-cols-4 md:grid gap-4">
-          <article class="m-2 bg-gray-600">
-            <h2>Kapitel 1 - Intro til street foto</h2>
-            <p>
+          <article class="p-5 m-3 bg-gray-100 rounded-xl">
+            <h2 class="p-2 text-xl">Kapitel 1 - Intro til street foto</h2>
+            <p class="p-2">
               Hvad er street foto? Det handler i bund og grund om at skyde byens
               liv og byens geometri (urban geometry). I dette kapitel får du en
               grundig intro til hvad street foto er og et overblik over nogen af
@@ -59,9 +63,9 @@
               eksempler på street fotos.
             </p>
           </article>
-          <article>
-            <h2>Kapitel 2 - Om at skyde street</h2>
-            <p>
+          <article class="p-5 m-3 bg-gray-100 rounded-xl">
+            <h2 class="p-2 text-xl">Kapitel 2 - Om at skyde street</h2>
+            <p class="p-2">
               Vil du skyde street? Så er der ikke nogen vej udenom: Du skal ud
               på gaderne og prøve det! I dette kapitel får du en teknisk
               indføring i hvordan du bedst skyder street. Uanset om du er
@@ -69,44 +73,44 @@
               tricks til street-skyderiet.
             </p>
           </article>
-          <article>
-            <h2>Kapitel 3 - Om at finde det rette motiv</h2>
-            <p>
+          <article class="p-5 m-3 bg-gray-100 rounded-xl">
+            <h2 class="p-2 text-xl">Kapitel 3 - Om at finde det rette motiv</h2>
+            <p class="p-2">
               Indimellem er man heldig, andre gange kommer man hjem helt uden
               gode motiver. Med et par tips og tricks til at finde de rette
               motiver, stiger chancen gevaldigt for at fange de gode motiver.
             </p>
           </article>
-          <article>
-            <h2>Kapitel 4 - Digital street foto</h2>
-            <p>
+          <article class="p-5 m-3 bg-gray-100 rounded-xl">
+            <h2 class="p-2 text-xl">Kapitel 4 - Digital street foto</h2>
+            <p class="p-2">
               De fleste af os skyder oftest digitalt fordi det er billigere og
               nemmere. Og nogen teknikker og fremgangsmåder egner sig kun til
               digital street foto. I dette kapitel får du en række tips og
               tricks til digital street-foto.
             </p>
           </article>
-          <article>
-            <h2>Kapitel 5 - Analog street foto</h2>
-            <p>
+          <article class="p-5 m-3 bg-gray-100 rounded-xl">
+            <h2 class="p-2 text-xl">Kapitel 5 - Analog street foto</h2>
+            <p class="p-2">
               Analog er sejt fordi det er mere “ægte,” dyrere og mere besværligt
               end digital. Det signalerer entusiasme. Nogle teknikker og
               fremgangsmåder egner sig bedst til analog street foto. I dette
               kapitel får du en række tips og tricks til analog street-foto.
             </p>
           </article>
-          <article>
-            <h2>Kapitel 6 - Om at skyde sort/hvid</h2>
-            <p>
+          <article class="p-5 m-3 bg-gray-100 rounded-xl">
+            <h2 class="p-2 text-xl">Kapitel 6 - Om at skyde sort/hvid</h2>
+            <p class="p-2">
               Alle street-fotografer skyder sort/hvid nu og da. Nogen altid.
               Hvorfor? Hvad er der specielt ved sort/hvid fotografering, og hvad
               adskiller sort/hvid fra farvefotografering? Her får du en række
               tips og tricks til sort/hvid fotografering.
             </p>
           </article>
-          <article>
-            <h2>Kapitel 7 - Kreative teknikker</h2>
-            <p>
+          <article class="p-5 m-3 bg-gray-100 rounded-xl">
+            <h2 class="p-2 text-xl">Kapitel 7 - Kreative teknikker</h2>
+            <p class="p-2">
               Dobbelteksponeringer, ICM (intentional camera moves), smadrede
               objektiver, gamle filmruller og alle mulige andre, spændende
               kreative teknikker kan løfte dine fotografier fra at være kedelige
@@ -114,9 +118,9 @@
               dyk ned i dette kapitel om eksperimenterende teknikker!
             </p>
           </article>
-          <article>
-            <h2>Kapitel 8 - Kom helt tæt på!</h2>
-            <p>
+          <article class="p-5 m-3 bg-gray-100 rounded-xl">
+            <h2 class="p-2 text-xl">Kapitel 8 - Kom helt tæt på!</h2>
+            <p class="p-2">
               Street foto handler om at fotografere livet på gaden - men tør du
               at gå helt tæt på fremmede mennesker og knipse løs? Du kan lige så
               godt øve dig, for det er det der vil gøre dig til en bedre
@@ -125,11 +129,14 @@
           </article>
         </div>
       </section>
-      <section id="section4">
-        <h2>Anmeldelser af bogen</h2>
-        <div class="grid-cols-3 sm:grid">
-          <article>
-            <h2>5 af 6 stjerner</h2>
+      <section id="section4" class="sm:mx-10 px-5 py-10">
+        <h2 class="p-5 text-3xl">Anmeldelser af bogen</h2>
+        <div class="grid-cols-3 gap-10 sm:grid">
+          <article class="p-5">
+            <h2 class="text-xl py-3">5 af 6 stjerner</h2>
+            <div class="flex mb-5">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ph" width="32" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><path d="M234 115.5l-45.2 37.6l14.3 58.1a16.5 16.5 0 0 1-15.8 20.8a16.1 16.1 0 0 1-8.7-2.6l-50.5-31.9h-.2L81 227.2a18 18 0 0 1-20.1-.6a18.5 18.5 0 0 1-7-19.6l13.5-53.1L22 115.5a16.8 16.8 0 0 1-5.2-18.1A16.5 16.5 0 0 1 31.4 86l59-3.8l22.4-55.8A16.4 16.4 0 0 1 128 16a16.4 16.4 0 0 1 15.2 10.4l22 55.5l59.4 4.1a16.4 16.4 0 0 1 14.6 11.4a16.8 16.8 0 0 1-5.2 18.1z" fill="currentColor"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ph" width="32" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><path d="M234 115.5l-45.2 37.6l14.3 58.1a16.5 16.5 0 0 1-15.8 20.8a16.1 16.1 0 0 1-8.7-2.6l-50.5-31.9h-.2L81 227.2a18 18 0 0 1-20.1-.6a18.5 18.5 0 0 1-7-19.6l13.5-53.1L22 115.5a16.8 16.8 0 0 1-5.2-18.1A16.5 16.5 0 0 1 31.4 86l59-3.8l22.4-55.8A16.4 16.4 0 0 1 128 16a16.4 16.4 0 0 1 15.2 10.4l22 55.5l59.4 4.1a16.4 16.4 0 0 1 14.6 11.4a16.8 16.8 0 0 1-5.2 18.1z" fill="currentColor"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ph" width="32" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><path d="M234 115.5l-45.2 37.6l14.3 58.1a16.5 16.5 0 0 1-15.8 20.8a16.1 16.1 0 0 1-8.7-2.6l-50.5-31.9h-.2L81 227.2a18 18 0 0 1-20.1-.6a18.5 18.5 0 0 1-7-19.6l13.5-53.1L22 115.5a16.8 16.8 0 0 1-5.2-18.1A16.5 16.5 0 0 1 31.4 86l59-3.8l22.4-55.8A16.4 16.4 0 0 1 128 16a16.4 16.4 0 0 1 15.2 10.4l22 55.5l59.4 4.1a16.4 16.4 0 0 1 14.6 11.4a16.8 16.8 0 0 1-5.2 18.1z" fill="currentColor"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ph" width="32" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><path d="M234 115.5l-45.2 37.6l14.3 58.1a16.5 16.5 0 0 1-15.8 20.8a16.1 16.1 0 0 1-8.7-2.6l-50.5-31.9h-.2L81 227.2a18 18 0 0 1-20.1-.6a18.5 18.5 0 0 1-7-19.6l13.5-53.1L22 115.5a16.8 16.8 0 0 1-5.2-18.1A16.5 16.5 0 0 1 31.4 86l59-3.8l22.4-55.8A16.4 16.4 0 0 1 128 16a16.4 16.4 0 0 1 15.2 10.4l22 55.5l59.4 4.1a16.4 16.4 0 0 1 14.6 11.4a16.8 16.8 0 0 1-5.2 18.1z" fill="currentColor"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ph" width="32" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><path d="M234 115.5l-45.2 37.6l14.3 58.1a16.5 16.5 0 0 1-15.8 20.8a16.1 16.1 0 0 1-8.7-2.6l-50.5-31.9h-.2L81 227.2a18 18 0 0 1-20.1-.6a18.5 18.5 0 0 1-7-19.6l13.5-53.1L22 115.5a16.8 16.8 0 0 1-5.2-18.1A16.5 16.5 0 0 1 31.4 86l59-3.8l22.4-55.8A16.4 16.4 0 0 1 128 16a16.4 16.4 0 0 1 15.2 10.4l22 55.5l59.4 4.1a16.4 16.4 0 0 1 14.6 11.4a16.8 16.8 0 0 1-5.2 18.1z" fill="currentColor"></path></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ph" width="32" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><path d="M187.3 236a20.6 20.6 0 0 1-10.9-3.2L128 202.1l-44.9 28.5a21.7 21.7 0 0 1-24.5-.8a22.4 22.4 0 0 1-8.6-23.7l13.1-51.2l-43.7-36.3A20.9 20.9 0 0 1 13 96.2A20.5 20.5 0 0 1 31.1 82l56.8-3.6l21.2-53.5a20.3 20.3 0 0 1 37.8 0l21.2 53.5l56.8 3.6A20.5 20.5 0 0 1 243 96.2a20.9 20.9 0 0 1-6.4 22.4l-43.7 36.3l14.1 55.3a20.6 20.6 0 0 1-7.9 21.9a19.9 19.9 0 0 1-11.8 3.9zm2-23.5zm-61.3-35a19.9 19.9 0 0 1 10.8 3.1l42.8 27.1l-12.4-48.9a20.9 20.9 0 0 1 6.8-21.1l38.8-32.3l-50.5-3.2a20.5 20.5 0 0 1-17.6-12.9l-18.7-47l-18.7 47a20.5 20.5 0 0 1-17.6 12.9l-50.5 3.2L80 137.7a20.9 20.9 0 0 1 6.8 21.1l-12.4 48.9l42.8-27.1a19.9 19.9 0 0 1 10.8-3.1zm-2 23.4z" fill="currentColor"></path></svg></div>
             <p>
               Københavnerbilleder er en grundig introduktion til at skyde
               billeder med retro-kant. Hvad enten du er har arbejdet med foto
@@ -138,67 +145,80 @@
               <p>- Hanne Hovgaard, Berlingeren </p> 
             </p>
           </article>
-          <article>
-            <h2>4 af 5 stjerner
+          <article class="p-5">
+            <h2 class="text-xl py-3">4 af 6 stjerner
             </h2>
+            <div class="flex mb-5">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ph" width="32" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><path d="M234 115.5l-45.2 37.6l14.3 58.1a16.5 16.5 0 0 1-15.8 20.8a16.1 16.1 0 0 1-8.7-2.6l-50.5-31.9h-.2L81 227.2a18 18 0 0 1-20.1-.6a18.5 18.5 0 0 1-7-19.6l13.5-53.1L22 115.5a16.8 16.8 0 0 1-5.2-18.1A16.5 16.5 0 0 1 31.4 86l59-3.8l22.4-55.8A16.4 16.4 0 0 1 128 16a16.4 16.4 0 0 1 15.2 10.4l22 55.5l59.4 4.1a16.4 16.4 0 0 1 14.6 11.4a16.8 16.8 0 0 1-5.2 18.1z" fill="currentColor"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ph" width="32" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><path d="M234 115.5l-45.2 37.6l14.3 58.1a16.5 16.5 0 0 1-15.8 20.8a16.1 16.1 0 0 1-8.7-2.6l-50.5-31.9h-.2L81 227.2a18 18 0 0 1-20.1-.6a18.5 18.5 0 0 1-7-19.6l13.5-53.1L22 115.5a16.8 16.8 0 0 1-5.2-18.1A16.5 16.5 0 0 1 31.4 86l59-3.8l22.4-55.8A16.4 16.4 0 0 1 128 16a16.4 16.4 0 0 1 15.2 10.4l22 55.5l59.4 4.1a16.4 16.4 0 0 1 14.6 11.4a16.8 16.8 0 0 1-5.2 18.1z" fill="currentColor"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ph" width="32" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><path d="M234 115.5l-45.2 37.6l14.3 58.1a16.5 16.5 0 0 1-15.8 20.8a16.1 16.1 0 0 1-8.7-2.6l-50.5-31.9h-.2L81 227.2a18 18 0 0 1-20.1-.6a18.5 18.5 0 0 1-7-19.6l13.5-53.1L22 115.5a16.8 16.8 0 0 1-5.2-18.1A16.5 16.5 0 0 1 31.4 86l59-3.8l22.4-55.8A16.4 16.4 0 0 1 128 16a16.4 16.4 0 0 1 15.2 10.4l22 55.5l59.4 4.1a16.4 16.4 0 0 1 14.6 11.4a16.8 16.8 0 0 1-5.2 18.1z" fill="currentColor"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ph" width="32" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><path d="M234 115.5l-45.2 37.6l14.3 58.1a16.5 16.5 0 0 1-15.8 20.8a16.1 16.1 0 0 1-8.7-2.6l-50.5-31.9h-.2L81 227.2a18 18 0 0 1-20.1-.6a18.5 18.5 0 0 1-7-19.6l13.5-53.1L22 115.5a16.8 16.8 0 0 1-5.2-18.1A16.5 16.5 0 0 1 31.4 86l59-3.8l22.4-55.8A16.4 16.4 0 0 1 128 16a16.4 16.4 0 0 1 15.2 10.4l22 55.5l59.4 4.1a16.4 16.4 0 0 1 14.6 11.4a16.8 16.8 0 0 1-5.2 18.1z" fill="currentColor"></path></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ph" width="32" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><path d="M187.3 236a20.6 20.6 0 0 1-10.9-3.2L128 202.1l-44.9 28.5a21.7 21.7 0 0 1-24.5-.8a22.4 22.4 0 0 1-8.6-23.7l13.1-51.2l-43.7-36.3A20.9 20.9 0 0 1 13 96.2A20.5 20.5 0 0 1 31.1 82l56.8-3.6l21.2-53.5a20.3 20.3 0 0 1 37.8 0l21.2 53.5l56.8 3.6A20.5 20.5 0 0 1 243 96.2a20.9 20.9 0 0 1-6.4 22.4l-43.7 36.3l14.1 55.3a20.6 20.6 0 0 1-7.9 21.9a19.9 19.9 0 0 1-11.8 3.9zm2-23.5zm-61.3-35a19.9 19.9 0 0 1 10.8 3.1l42.8 27.1l-12.4-48.9a20.9 20.9 0 0 1 6.8-21.1l38.8-32.3l-50.5-3.2a20.5 20.5 0 0 1-17.6-12.9l-18.7-47l-18.7 47a20.5 20.5 0 0 1-17.6 12.9l-50.5 3.2L80 137.7a20.9 20.9 0 0 1 6.8 21.1l-12.4 48.9l42.8-27.1a19.9 19.9 0 0 1 10.8-3.1zm-2 23.4z" fill="currentColor"></path></svg> <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ph" width="32" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><path d="M187.3 236a20.6 20.6 0 0 1-10.9-3.2L128 202.1l-44.9 28.5a21.7 21.7 0 0 1-24.5-.8a22.4 22.4 0 0 1-8.6-23.7l13.1-51.2l-43.7-36.3A20.9 20.9 0 0 1 13 96.2A20.5 20.5 0 0 1 31.1 82l56.8-3.6l21.2-53.5a20.3 20.3 0 0 1 37.8 0l21.2 53.5l56.8 3.6A20.5 20.5 0 0 1 243 96.2a20.9 20.9 0 0 1-6.4 22.4l-43.7 36.3l14.1 55.3a20.6 20.6 0 0 1-7.9 21.9a19.9 19.9 0 0 1-11.8 3.9zm2-23.5zm-61.3-35a19.9 19.9 0 0 1 10.8 3.1l42.8 27.1l-12.4-48.9a20.9 20.9 0 0 1 6.8-21.1l38.8-32.3l-50.5-3.2a20.5 20.5 0 0 1-17.6-12.9l-18.7-47l-18.7 47a20.5 20.5 0 0 1-17.6 12.9l-50.5 3.2L80 137.7a20.9 20.9 0 0 1 6.8 21.1l-12.4 48.9l42.8-27.1a19.9 19.9 0 0 1 10.8-3.1zm-2 23.4z" fill="currentColor"></path></svg> </div>
             <p>
               Teksten er underholdende, og billederne er sku’ flotte. Hvad mere skal man sige om en fotobog?
 <p> - Kim Kloggaard, Fotojournalen.dk </p> 
 
             </p>
           </article>
-          <article>
-            <h2>6 af 6 stjerner
+          <article class="p-5 ">
+            <h2 class="text-xl py-3 ">6 af 6 stjerner
             </h2>
+            <div class="flex mb-5">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ph" width="32" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><path d="M234 115.5l-45.2 37.6l14.3 58.1a16.5 16.5 0 0 1-15.8 20.8a16.1 16.1 0 0 1-8.7-2.6l-50.5-31.9h-.2L81 227.2a18 18 0 0 1-20.1-.6a18.5 18.5 0 0 1-7-19.6l13.5-53.1L22 115.5a16.8 16.8 0 0 1-5.2-18.1A16.5 16.5 0 0 1 31.4 86l59-3.8l22.4-55.8A16.4 16.4 0 0 1 128 16a16.4 16.4 0 0 1 15.2 10.4l22 55.5l59.4 4.1a16.4 16.4 0 0 1 14.6 11.4a16.8 16.8 0 0 1-5.2 18.1z" fill="currentColor"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ph" width="32" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><path d="M234 115.5l-45.2 37.6l14.3 58.1a16.5 16.5 0 0 1-15.8 20.8a16.1 16.1 0 0 1-8.7-2.6l-50.5-31.9h-.2L81 227.2a18 18 0 0 1-20.1-.6a18.5 18.5 0 0 1-7-19.6l13.5-53.1L22 115.5a16.8 16.8 0 0 1-5.2-18.1A16.5 16.5 0 0 1 31.4 86l59-3.8l22.4-55.8A16.4 16.4 0 0 1 128 16a16.4 16.4 0 0 1 15.2 10.4l22 55.5l59.4 4.1a16.4 16.4 0 0 1 14.6 11.4a16.8 16.8 0 0 1-5.2 18.1z" fill="currentColor"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ph" width="32" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><path d="M234 115.5l-45.2 37.6l14.3 58.1a16.5 16.5 0 0 1-15.8 20.8a16.1 16.1 0 0 1-8.7-2.6l-50.5-31.9h-.2L81 227.2a18 18 0 0 1-20.1-.6a18.5 18.5 0 0 1-7-19.6l13.5-53.1L22 115.5a16.8 16.8 0 0 1-5.2-18.1A16.5 16.5 0 0 1 31.4 86l59-3.8l22.4-55.8A16.4 16.4 0 0 1 128 16a16.4 16.4 0 0 1 15.2 10.4l22 55.5l59.4 4.1a16.4 16.4 0 0 1 14.6 11.4a16.8 16.8 0 0 1-5.2 18.1z" fill="currentColor"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ph" width="32" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><path d="M234 115.5l-45.2 37.6l14.3 58.1a16.5 16.5 0 0 1-15.8 20.8a16.1 16.1 0 0 1-8.7-2.6l-50.5-31.9h-.2L81 227.2a18 18 0 0 1-20.1-.6a18.5 18.5 0 0 1-7-19.6l13.5-53.1L22 115.5a16.8 16.8 0 0 1-5.2-18.1A16.5 16.5 0 0 1 31.4 86l59-3.8l22.4-55.8A16.4 16.4 0 0 1 128 16a16.4 16.4 0 0 1 15.2 10.4l22 55.5l59.4 4.1a16.4 16.4 0 0 1 14.6 11.4a16.8 16.8 0 0 1-5.2 18.1z" fill="currentColor"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ph" width="32" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><path d="M234 115.5l-45.2 37.6l14.3 58.1a16.5 16.5 0 0 1-15.8 20.8a16.1 16.1 0 0 1-8.7-2.6l-50.5-31.9h-.2L81 227.2a18 18 0 0 1-20.1-.6a18.5 18.5 0 0 1-7-19.6l13.5-53.1L22 115.5a16.8 16.8 0 0 1-5.2-18.1A16.5 16.5 0 0 1 31.4 86l59-3.8l22.4-55.8A16.4 16.4 0 0 1 128 16a16.4 16.4 0 0 1 15.2 10.4l22 55.5l59.4 4.1a16.4 16.4 0 0 1 14.6 11.4a16.8 16.8 0 0 1-5.2 18.1z" fill="currentColor"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ph" width="32" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><path d="M234 115.5l-45.2 37.6l14.3 58.1a16.5 16.5 0 0 1-15.8 20.8a16.1 16.1 0 0 1-8.7-2.6l-50.5-31.9h-.2L81 227.2a18 18 0 0 1-20.1-.6a18.5 18.5 0 0 1-7-19.6l13.5-53.1L22 115.5a16.8 16.8 0 0 1-5.2-18.1A16.5 16.5 0 0 1 31.4 86l59-3.8l22.4-55.8A16.4 16.4 0 0 1 128 16a16.4 16.4 0 0 1 15.2 10.4l22 55.5l59.4 4.1a16.4 16.4 0 0 1 14.6 11.4a16.8 16.8 0 0 1-5.2 18.1z" fill="currentColor"></path></svg>
+            </div>
             <p>
               Sten Simons kan det der - og han bliver bedre og bedre. Stens tredje fotobog er klart den bedste - her er han for alvor i sit rette element, meget bedre end “studiefotografering som begyndere.” Tillykke - godt arbejde.
-              <p>  Volmer Hansen, Lukkertiden.dk </p>
+              <p> - Volmer Hansen, Lukkertiden.dk </p>
               
             </p>
           </article>
         </div>
       </section>
-      <section id="section5">
-        <h2>Billeder fra bogen</h2>
-        <figure class="grid-cols-3 gap-2 sm:grid">
-          <img
+      <section id="section5" class="px-10 sm:mx-10 py-10">
+        <h2 class="text-3xl">Billeder fra bogen</h2>
+        <figure class="grid-cols-4 gap-2 sm:grid">
+          <img class="max-w-full max-h-96"
             src="img/anamorfiske-landskaber-amager-faelled-4.jpg"
             alt="pic"
           />
-          <img src="img/foraar-med-et-agfa-lebox-2-20.jpg" alt="pic" />
-          <img src="img/kbh-by-night-3.jpg" alt="pic" />
-          <img
+          <img class="max-w-full max-h-96"
             src="img/orestad-til-islands-brygge-pentax-auto-110-14.jpg"
             alt="pic"
           />
-          <img src="img/tyk-taage-i-orestad.jpg" alt="pic" />
-          <img src="img/vinter-2021-med-lomo-smena-17.jpg" alt="pic" />
-          <img
-            src="img/orestad-til-islands-brygge-pentax-auto-110-16.jpg"
-            alt="pic"
-          />
-          <img src="img/_6090022.jpeg" alt="pic" />
-          <img src="img/tyk-taage-i-orestad.jpg" alt="pic" />
+          <img class="max-w-full max-h-96"
+          src="img/orestad-til-islands-brygge-pentax-auto-110-16.jpg"
+          alt="pic"
+        />
+          
+          <img class="max-w-full max-h-96" src="img/foraar-med-et-agfa-lebox-2-20.jpg" alt="pic" />
+          <img class="max-w-full max-h-96" src="img/kbh-by-night-3.jpg" alt="pic" />
+          
+          <img class="max-w-full max-h-96" src="img/tyk-taage-i-orestad.jpg" alt="pic" />
+          <img class="max-w-full max-h-96" src="img/vinter-2021-med-lomo-smena-17.jpg" alt="pic" />
+         
+          <img class="max-w-full max-h-96" src="img/_6090022.jpeg" alt="pic" />
+          
         </figure>
       </section>
-      <section id="section6">
-        <h1>Forfatteren</h1>
-        <div class="grid-cols-2 md:grid">
-          <figure><img src="img/sten_simons.jpg" alt="" /></figure>
-          <article>
-            <p>
+      <section id="section6" >
+        <h1 class="text-4xl px-10 py-7 ml-10 m-10 pl-52">Forfatteren</h1>
+        <div class="m-10 grid-cols-2 md:grid">
+          <figure class="flex justify-center"><img class="max-w-full max-h-96" src="img/sten_simons.jpg" alt="" /></figure>
+          <article class="flex flex-col justify-center items-center px-10">
+            <p class="mr-10 sm:pr-40">
               Sten Simons har en lang foto-karriere bag sig. Det hele startede i 00’erne, da han gik rundt i Pisserenden for at fotografere ungdommens forfald. Det ledte til en række udstillinger, og blev senere til hans først fotobog “Ungdomsdruk - pinlige billeder fra nattelivet.” </p>
-             <p> Derefter tog karrieren fart: Han blev fotojournalist og dokumenterede en masse dagligdagsstof fra Amager på dagbladet “Amagerkaneren.” Sideløbende begyndte han at undervise i foto, og har skrevet et utal af bøger, herunder bestsellerne Scener fra S-toget, Brun mad - en visuel odysse, og lærebogen Fotografering for evnesvage.
+             <p class="mr-10 pr-10"> Derefter tog karrieren fart: Han blev fotojournalist og dokumenterede en masse dagligdagsstof fra Amager på dagbladet “Amagerkaneren.” Sideløbende begyndte han at undervise i foto, og har skrevet et utal af bøger, herunder bestsellerne Scener fra S-toget, Brun mad - en visuel odysse, og lærebogen Fotografering for evnesvage.
             </p> 
 
            
           </article>
         </div>
-        <div><h2>Køb Københavne billeder nu!</h2></div>
-        <button>köb</button>
+        <div class="pl-56 py-5 bg-gray-200">
+          <h2 class=" text-3xl">Køb Københavne billeder nu!</h2>
+          <button class="rounded-xl text-xl bg-[#FF66BA] px-6 py-2 m-4 max-w-xs text-gray-200 text-gray-100 hover:text-gray-100 hover:bg-gray-900">Køb nu</button>
+      </div>
       </section>
     </main>
-    <footer></footer>
+    <footer>
+      <h2 class="flex justify-center m-7">@Copyrights 2022</h2>
+    </footer>
     <script type="module" src="index.js"></script>
   </body>
 </html>
