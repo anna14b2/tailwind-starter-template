@@ -10,10 +10,16 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
 <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
   </head>
-  <body class="">
+  <body class="bg-white dark:bg-secondary">
+   
     <main class="font-poppins">
+      
       <section id="section1" class="grid-cols-2 bg-primary md:grid">
         <figure>
+          <button id="darkbtn" class="p-5 flex ">
+            <svg class="p-1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ls" width="27.82" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 551 634"><path d="M312.297 99v7c0 27-12 40-37 40s-36-13-36-40v-7c0-26 11-39 36-39s37 13 37 39zm74 32l5-6c15-22 33-25 52-11c20 14 23 33 8 55l-6 5c-15 22-33 25-52 10c-20-14-22-31-7-53zm-226-6l4 6c15 22 13 39-6 53c-20 15-39 12-54-10l-4-5c-15-22-13-41 6-55c20-14 39-9 54 11zm115 66c85 0 155 70 155 156c0 85-70 154-155 154c-86 0-155-69-155-154c0-86 69-156 155-156zm-224 44l7 2c26 8 34 23 27 47c-8 24-24 31-49 23l-7-2c-25-8-34-23-27-47c8-24 24-31 49-23zm441 2l7-2c26-8 42-1 49 23s-1 39-27 47l-6 2c-26 8-42 1-49-23c-8-24 1-39 26-47zm-217 196c47 0 86-39 86-86c0-48-39-87-86-87c-48 0-87 39-87 87c0 47 39 86 87 86zm-246-45l7-2c25-8 41-2 49 22c7 24-1 39-27 47l-7 2c-25 8-41 2-49-22c-7-24 2-39 27-47zm486-2l6 2c26 8 34 23 27 47s-23 30-49 22l-7-2c-25-8-34-23-26-47c7-24 23-30 49-22zm-415 139l4-6c15-22 34-24 54-10c19 14 21 31 6 53l-4 6c-15 22-34 24-54 10c-19-14-21-31-6-53zm345-6l6 6c15 22 12 39-8 53c-19 14-37 12-52-10l-5-6c-15-22-13-39 7-53c19-14 37-12 52 10zm-133 67v8c0 27-12 40-37 40s-36-13-36-40v-8c0-27 11-40 36-40s37 13 37 40z" fill="currentColor"></path></svg>
+            <h3 class="p-1 underline hover:text-graytone"> Dark mode</h3> 
+          </button>
           <img src="img/kobenhavnerbilleder-sten-simons.jpg" alt="bog" />
         </figure>
         <article class="flex flex-col justify-center sm:items-center sm:pr-20">
@@ -24,9 +30,9 @@
       </section>
       <section id="section2" >
         <article class="m-5 px-10 ">
-          <h2 class="flex justify-end sm:pr-60 mx-10 mt-12  text-3xl">Intro - kort om bogen</h2>
+          <h2 class="flex justify-end sm:pr-60 mx-10 mt-12  text-3xl dark:text-graytone">Intro - kort om bogen</h2>
           <div class="grid-cols-2 gap-10 md:grid">
-            <ul class="bg-secondary text-primary rounded-xl p-5 m-10 ml-20">
+            <ul class="bg-secondary text-primary rounded-xl p-5 m-10 ml-20 dark:bg-primary dark:text-secondary">
               <li class="p-1">Titel: Københavnerbilleder - en guide til hipster foto</li>
               <li class="p-1">Forfatter: Sten Simons Antal</li>
               <li class="p-1">Sider: 344</li>
@@ -34,7 +40,7 @@
               <li class="p-1">ISBN: 987-6-987654-32-1</li>
               <li class="p-1">Pris: 399.-</li>
             </ul>
-            <p class="m-10 sm:pr-48">
+            <p class="m-10 sm:pr-48 dark:text-primary">
               Københavnerbilleder er de danske streetfotografers bibel: Det er
               en fusion mellem et kunstværk og en lærebog. Bogen gennemgår alle
               væsentlige aspekter af streetfotografering fra grundlæggende
@@ -51,7 +57,7 @@
         </figure>
       </section>
       <section id="section3" class="sm:mx-10 px-5">
-        <h2 class="p-4 my-10 text-6xl"> Intro til kapitlerne</h2>
+        <h2 class="p-4 my-10 text-6xl dark:text-graytone"> Intro til kapitlerne</h2>
         <div class="grid-cols-4 md:grid gap-4">
           <article class="p-5 m-3 bg-graytone rounded-xl">
             <h2 class="p-2 text-xl">Kapitel 1 - Intro til street foto</h2>
@@ -130,9 +136,9 @@
         </div>
       </section>
       <section id="section4" class="sm:mx-10 px-5 py-10">
-        <h2 class="p-5 text-3xl">Anmeldelser af bogen</h2>
+        <h2 class="p-5 text-3xl dark:text-graytone">Anmeldelser af bogen</h2>
         <div class="grid-cols-3 gap-10 sm:grid">
-          <article class="p-5">
+          <article class="p-5 dark:text-graytone">
             <h2 class="text-xl py-3">5 af 6 stjerner</h2>
             <div class="flex mb-5">
               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ph" width="32" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><path d="M234 115.5l-45.2 37.6l14.3 58.1a16.5 16.5 0 0 1-15.8 20.8a16.1 16.1 0 0 1-8.7-2.6l-50.5-31.9h-.2L81 227.2a18 18 0 0 1-20.1-.6a18.5 18.5 0 0 1-7-19.6l13.5-53.1L22 115.5a16.8 16.8 0 0 1-5.2-18.1A16.5 16.5 0 0 1 31.4 86l59-3.8l22.4-55.8A16.4 16.4 0 0 1 128 16a16.4 16.4 0 0 1 15.2 10.4l22 55.5l59.4 4.1a16.4 16.4 0 0 1 14.6 11.4a16.8 16.8 0 0 1-5.2 18.1z" fill="currentColor"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ph" width="32" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><path d="M234 115.5l-45.2 37.6l14.3 58.1a16.5 16.5 0 0 1-15.8 20.8a16.1 16.1 0 0 1-8.7-2.6l-50.5-31.9h-.2L81 227.2a18 18 0 0 1-20.1-.6a18.5 18.5 0 0 1-7-19.6l13.5-53.1L22 115.5a16.8 16.8 0 0 1-5.2-18.1A16.5 16.5 0 0 1 31.4 86l59-3.8l22.4-55.8A16.4 16.4 0 0 1 128 16a16.4 16.4 0 0 1 15.2 10.4l22 55.5l59.4 4.1a16.4 16.4 0 0 1 14.6 11.4a16.8 16.8 0 0 1-5.2 18.1z" fill="currentColor"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ph" width="32" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><path d="M234 115.5l-45.2 37.6l14.3 58.1a16.5 16.5 0 0 1-15.8 20.8a16.1 16.1 0 0 1-8.7-2.6l-50.5-31.9h-.2L81 227.2a18 18 0 0 1-20.1-.6a18.5 18.5 0 0 1-7-19.6l13.5-53.1L22 115.5a16.8 16.8 0 0 1-5.2-18.1A16.5 16.5 0 0 1 31.4 86l59-3.8l22.4-55.8A16.4 16.4 0 0 1 128 16a16.4 16.4 0 0 1 15.2 10.4l22 55.5l59.4 4.1a16.4 16.4 0 0 1 14.6 11.4a16.8 16.8 0 0 1-5.2 18.1z" fill="currentColor"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ph" width="32" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><path d="M234 115.5l-45.2 37.6l14.3 58.1a16.5 16.5 0 0 1-15.8 20.8a16.1 16.1 0 0 1-8.7-2.6l-50.5-31.9h-.2L81 227.2a18 18 0 0 1-20.1-.6a18.5 18.5 0 0 1-7-19.6l13.5-53.1L22 115.5a16.8 16.8 0 0 1-5.2-18.1A16.5 16.5 0 0 1 31.4 86l59-3.8l22.4-55.8A16.4 16.4 0 0 1 128 16a16.4 16.4 0 0 1 15.2 10.4l22 55.5l59.4 4.1a16.4 16.4 0 0 1 14.6 11.4a16.8 16.8 0 0 1-5.2 18.1z" fill="currentColor"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ph" width="32" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><path d="M234 115.5l-45.2 37.6l14.3 58.1a16.5 16.5 0 0 1-15.8 20.8a16.1 16.1 0 0 1-8.7-2.6l-50.5-31.9h-.2L81 227.2a18 18 0 0 1-20.1-.6a18.5 18.5 0 0 1-7-19.6l13.5-53.1L22 115.5a16.8 16.8 0 0 1-5.2-18.1A16.5 16.5 0 0 1 31.4 86l59-3.8l22.4-55.8A16.4 16.4 0 0 1 128 16a16.4 16.4 0 0 1 15.2 10.4l22 55.5l59.4 4.1a16.4 16.4 0 0 1 14.6 11.4a16.8 16.8 0 0 1-5.2 18.1z" fill="currentColor"></path></svg>
@@ -145,7 +151,7 @@
               <p>- Hanne Hovgaard, Berlingeren </p> 
             </p>
           </article>
-          <article class="p-5">
+          <article class="p-5 dark:text-graytone">
             <h2 class="text-xl py-3">4 af 6 stjerner
             </h2>
             <div class="flex mb-5">
@@ -157,7 +163,7 @@
 
             </p>
           </article>
-          <article class="p-5 ">
+          <article class="p-5 dark:text-graytone">
             <h2 class="text-xl py-3 ">6 af 6 stjerner
             </h2>
             <div class="flex mb-5">
@@ -172,7 +178,7 @@
         </div>
       </section>
       <section id="section5" class="px-5 sm:mx-10 py-5">
-        <h2 class="text-3xl">Billeder fra bogen</h2>
+        <h2 class="text-3xl dark:text-graytone">Billeder fra bogen</h2>
         <figure class="grid-cols-3 gap-2 sm:grid">
           
           <img 
@@ -192,10 +198,10 @@
         </figure>
       </section>
       <section id="section6" >
-        <h1 class="text-4xl px-10 py-7 ml-10 m-10 pl-52">Forfatteren</h1>
+        <h1 class="text-4xl px-10 py-7 ml-10 m-10 pl-52 dark:text-graytone">Forfatteren</h1>
         <div class="m-10 grid-cols-2 md:grid">
           <figure class="flex justify-center"><img class="max-w-full max-h-96" src="img/sten_simons.jpg" alt="" /></figure>
-          <article class="flex flex-col justify-center items-center px-10">
+          <article class="flex flex-col justify-center items-center px-10 dark:text-graytone">
             <p class="mr-10 sm:pr-40">
               Sten Simons har en lang foto-karriere bag sig. Det hele startede i 00’erne, da han gik rundt i Pisserenden for at fotografere ungdommens forfald. Det ledte til en række udstillinger, og blev senere til hans først fotobog “Ungdomsdruk - pinlige billeder fra nattelivet.” </p>
              <p class="mr-10 pr-10"> Derefter tog karrieren fart: Han blev fotojournalist og dokumenterede en masse dagligdagsstof fra Amager på dagbladet “Amagerkaneren.” Sideløbende begyndte han at undervise i foto, og har skrevet et utal af bøger, herunder bestsellerne Scener fra S-toget, Brun mad - en visuel odysse, og lærebogen Fotografering for evnesvage.
@@ -211,8 +217,10 @@
       </section>
     </main>
     <footer>
-      <h2 class="flex justify-center m-7">@Copyrights 2022</h2>
+      <h2 class="dark:text-graytone flex justify-center m-7">@Copyrights 2022</h2>
+      
+     
     </footer>
-    <script type="module" src="index.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>
